@@ -1,20 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return: return 0 always (succuss)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int q = 9;
-double a;
-float b;
-char c;
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
 
-printf("the total size of variable q is equal to %lu byte(s)\n", (unsigned long)sizeof(q));
-printf("the tatal size of double a is %lu byte(s)\n", (unsigned long)sizeof(a));
-printf("the total size of float b is %lu byte(s)\n", (unsigned long)sizeof(b));
-printf("the total size of char c is %lu byte(s)\n", (unsigned long)sizeof(c));
-return (0);
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
 }
