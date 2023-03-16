@@ -12,9 +12,9 @@ double a;
 float b;
 char c;
 
-printf("the total size of variable q is equal to %d\n", sizeof(q));
-printf("the tatal size of double a is %d\n", (unsigned)sizeof(a));
-printf("the total size of float b is %d\n", (unsigned)sizeof(b));
-printf("the total size of char c is %d\n", (unsigned)sizeof(c));
+printf("the total size of variable q is equal to %lu\n", sizeof(q));
+printf("the tatal size of double a is %lu\n", (unsigned)sizeof(a));
+printf("the total size of float b is %lu\n", (unsigned)sizeof(b));
+printf("the total size of char c is %lu\n", (unsigned)sizeof(c));
 return (0)
 }
