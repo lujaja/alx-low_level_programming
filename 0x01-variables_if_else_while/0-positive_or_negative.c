@@ -3,7 +3,11 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - entry point
+ *
+ *Return: retun 0 always (success)
+ */
 int main(void)
 {
 	int n;
