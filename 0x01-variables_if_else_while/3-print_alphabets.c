@@ -14,7 +14,7 @@ putchar(alpha);
 alpha++;
 }
 
-char alpha = 'A';
+alpha = 'A';
 while (alpha <= 'Z')
 {
 putchar(alpha);
