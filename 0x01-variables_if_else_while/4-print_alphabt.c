@@ -11,11 +11,9 @@ char alpha = 'a';
 
 while (alpha <= 'z')
 {
-	if (alpha == 'q')
-		continue;
-	else if (alpha == 'e')
-		continue;
 putchar(alpha);
+alpha++;
+if (alpha == 'q' || alpha == 'e')
 alpha++;
 }
 putchar('\n');
