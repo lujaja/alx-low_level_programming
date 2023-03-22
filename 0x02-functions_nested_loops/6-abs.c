@@ -8,6 +8,8 @@
 
 int _abs(int)
 {
+	int t;
+
 	if (t >= 0)
 		return (t);
 	else 
