@@ -11,16 +11,17 @@ void print_to_98(int n)
 	{
 		while (n < 99)
 		{
-			_putchar(n);
-			_putchar('\n');
+			_putchar(n + '0');
 			n++;
 		}
+		_putchar('\n');
+			
 		while (n > 97)
 		{
-			_putchar(n);
-			_putchar('\n');
+			_putchar(n '0');
 			n--;
 		}
+		putchar('\n');
 	}
 }
 
