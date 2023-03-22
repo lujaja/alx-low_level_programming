@@ -1,17 +1,17 @@
 #include <main.h>
 /**
- * main - entry
+ * main - prints _putchar and a newline
  * Return: 0 always success
  */
 
 int main(void)
 {
-	char *lujaja = "_putchar";
+	char *c = "_putchar";
 
-	while (*lujaja)
+	while (*c)
 	{
-		_putchar(*lujaja);
-		lujaja++;
+		_putchar(*c);
+		c++;
 	}
 	_putchar('\n');
 
