@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-  * int_ abs - absolute value
-  *
+  * _abs - absolute value
+  *@t" the integer
   * return: value.
   */
 
