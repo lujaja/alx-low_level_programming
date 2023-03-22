@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_ islower - check if a character is lower case.
+ * _ islower - check if a character is lower case.
  *
  * @c: character
  *
@@ -11,7 +11,7 @@
 int _islower(int c)
 {
 
-	char c;
+	int c;
 
 	if (!(c >= 65 && <= 90))
 		return (1);
