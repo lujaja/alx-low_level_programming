@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * _abs - absolute value
-  *@t" the integer
-  * return: value.
-  */
+* _abs - absolute value
+* @t: the integer
+* return: value.
+*/
 
 int _abs(int t)
 {
