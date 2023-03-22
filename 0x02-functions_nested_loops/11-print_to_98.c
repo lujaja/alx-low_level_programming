@@ -7,22 +7,20 @@
 
 void print_to_98(int n)
 {
-	if (n < 99)
+	while ((n < 99) || (n > 97))
 	{
 		while (n < 99)
 		{
 			_putchar(n);
-			_putchar('\n');
+			_putchar('\n')
 			n++;
 		}
-	}
-	else (n > 97)
-	{
 		while (n > 97)
 		{
-			_putchar(n;
+			_putchar(n);
 			_putchar('\n');
 			n--;
 		}
 	}
 }
+
