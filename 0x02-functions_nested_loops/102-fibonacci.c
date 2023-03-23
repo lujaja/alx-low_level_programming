@@ -21,7 +21,7 @@ int main(void)
 		{
 			num2 += num1;
 			num1 = num2 - num1;
-			printf(", %ld", num2;
+			printf(", %ld", num2);
 		}
 		++i;
 	}
