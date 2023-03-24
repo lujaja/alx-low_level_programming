@@ -1,26 +1,3 @@
-bdbaraban
-/
-holbertonschool-low_level_programming
-Public
-Code
-Issues
-2
-Pull requests
-4
-Actions
-Projects
-Security
-Insights
-holbertonschool-low_level_programming/0x03-more_functions_nested_loops/9-fizz_buzz.c
-@234761
-234761 Completed tasks 0-10
- 1 contributor
-41 lines (32 sloc)  653 Bytes
-/*
- * File: 9-fizz_buzz.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
 
 /**
