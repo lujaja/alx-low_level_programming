@@ -1,11 +1,13 @@
 
+
+
 #include "main.h"
 
 
 /**
  * _atoi - converts string to inegers
  * @s: string pointer
- * Return: 0 is string cant be converted 
+ * Return: 0 is string cant be converted
  */
 
 int _atoi(char *s)
@@ -22,7 +24,7 @@ int _atoi(char *s)
 		{
 			results = results * 10 + (s[i] - 48);
 			if (sign % 2 != 0)
-				results = -results;results = -results;
+				results = -results;
 		}
 	}
 }
