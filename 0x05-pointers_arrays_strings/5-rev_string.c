@@ -18,6 +18,8 @@ void rev_string(char *s)
 	{
 		rev[begin] = s[end];
 		end--;
-		putchar(rev);
+		
 	}
+	putchar(rev);
+	
 }
