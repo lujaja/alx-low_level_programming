@@ -1,1 +1,1 @@
-ALX practicals on developing skills to c
+I am lujaja ALX S.E Student.
