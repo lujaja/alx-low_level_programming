@@ -1,6 +1,7 @@
 
 
 
+
 #include "main.h"
 
 /**
@@ -21,7 +22,7 @@ char *_strcpy(char *dest, char *src)
 
 	for (i = 0; i < len; i++)
 		dest[i] = src[i];
-	dest[i] = '\n';
+	dest[i] = '\0';
 	
 	return (dest);
 }
