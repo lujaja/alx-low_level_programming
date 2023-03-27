@@ -1,4 +1,5 @@
 
+
 #include "main.h"
 
 /**
@@ -14,6 +15,6 @@ void puts(char *str)
 		count++;
 
 	for (interval = 0; interval < count; interval += 2)
-		puts(str[interval]);
+		putchar(str[interval]);
 	putchar('\n');
 }

@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * puts - half(char *str)
+ * puts_half - (char *str)
  * @str: string pointer
  */
 
