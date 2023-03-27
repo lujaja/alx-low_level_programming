@@ -1,5 +1,6 @@
 
 
+
 #include "main.h"
 
 /**
@@ -9,7 +10,7 @@
  * Return: pointer to dest
  */
 
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	register int i, len;
 
