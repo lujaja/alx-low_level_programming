@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- * puts - prints every other character of a string
+ * puts2 - prints every other character of a string
  * @str: pointer
  */
 
-void puts(char *str)
+void puts2(char *str)
 {
 	register int interval, count = 0;
 
