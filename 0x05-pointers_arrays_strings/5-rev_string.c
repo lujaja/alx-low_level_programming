@@ -1,4 +1,6 @@
 
+
+
 #include "main.h"
 /**
  * rev_string - print in reverse order
@@ -8,7 +10,7 @@
 void rev_string(char *s)
 {
 	register int begin, end, count = 0;
-	char rev[];
+	char rev;
 
 	while (s[count] != '\0')
 		count++;
@@ -16,10 +18,8 @@ void rev_string(char *s)
 
 	for (begin = 0; begin < count; begin++)
 	{
-		rev[begin] = s[end];
+		rev = s[end];
 		end--;
-		
+		putchar(rev);
 	}
-	putchar(rev);
-	
 }
