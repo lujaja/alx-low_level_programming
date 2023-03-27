@@ -1,6 +1,5 @@
 
 
-
 #include "main.h"
 
 /**
@@ -12,7 +11,9 @@
 
 char *_strcopy(char *dest, char *src)
 {
-	register int i, len = 0;
+	register int i, len;
+
+	len = 0;
 
 	while (src[len] != '\0')
 		len++;
@@ -20,4 +21,6 @@ char *_strcopy(char *dest, char *src)
 	for (i = 0; i < len; i++)
 		dest[i] = src[i];
 	dest[i] = '\n';
+	
+	return (dest);
 }
