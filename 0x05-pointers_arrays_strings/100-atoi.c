@@ -11,16 +11,20 @@
 
 int _atoi(char *s)
 {
-	register int i, results = 0;
+	register int i, len;
+	int num;
 
-	for (i = 0;i < s[i] != '\0'; i++)
+	len = 0;
+	i = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	while (i < len)
 	{
 		if (s[i] < 48 || s[i] > 58)
-		return (0);
-
+			return (0);
 		else
-			results = results * 10 + (s[i] - 48);
-		if (i == '\0')
-			break;
+			num = s[i] - 48;
 	}
 }
