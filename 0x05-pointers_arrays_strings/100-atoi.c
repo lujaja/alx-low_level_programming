@@ -1,5 +1,6 @@
 
 
+
 #include "main.h"
 
 
@@ -12,7 +13,7 @@
 int _atoi(char *s)
 {
 	register int i, len;
-	int num;
+	int num, terminator;
 
 	len = 0;
 	i = 0;
@@ -23,8 +24,10 @@ int _atoi(char *s)
 	while (i < len)
 	{
 		if (s[i] < 48 || s[i] > 58)
-			return (0);
-		else
+			terminator = 0;
+		else if
 			num = s[i] - 48;
+		else
+			return (terminator);
 	}
 }
