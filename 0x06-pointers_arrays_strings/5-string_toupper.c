@@ -1,4 +1,5 @@
 
+
 #include "main.h"
 /**
  * *string_toupper - function that compares two strings
@@ -13,7 +14,7 @@ char *string_toupper(char *string)
 	{
 		if (*string >= 'a' && *string <= 'z')
 			*string -= upper;
-		*string++;
+		string++;
 	}
 	return (string);
 }
