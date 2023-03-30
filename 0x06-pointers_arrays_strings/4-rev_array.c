@@ -1,4 +1,5 @@
 
+
 #include "main.h"
 /**
  * reverse_array - function that array numbers
@@ -18,6 +19,6 @@ void reverse_array(int *a, int n)
 		n--;
 		i++;
 	}
-	a = &temp;
-	return (0);
+	a = temp;
+	return (a);
 }
