@@ -1,4 +1,5 @@
 
+
 #include "main.h"
 /**
  * _strncpy - check the code for Holberton School students.
@@ -18,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 		count++;
 		if (*src == '\0')
 			break;
-		*dest++ = '\0';
+		dest++ = '\0';
 	}
 	return (dest);
 }
