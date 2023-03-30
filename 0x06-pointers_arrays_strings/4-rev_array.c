@@ -9,16 +9,17 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i = 0;
+	int tmp;
+	int *end = a + n - 1;
 
-	int temp[n];
-
-	while (count < n)
+	while (a != end && n > 0)
 	{
-		a[n] = temp[i];
-		n--;
-		i++;
+		tmp = *a;
+		*a = *end;
+		*end = tmp;
+		if (a + 1 == end)
+			break;
+		a++;
+		end--;
 	}
-	a = temp;
-	return (a);
 }
