@@ -1,5 +1,6 @@
 
 
+
 #include "main.h"
 /**
  * _strncpy - check the code for Holberton School students.
@@ -11,15 +12,20 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	char *p = dest;
 	int count = 0;
 
-	while (count != n)
+	while (count < n)
 	{
-		*dest++ = *src++;
+		if (*src)
+		{
+			*dest = *src;
+			src++;
+		}
+		else
+			*dest = *src;
+		dest++;
 		count++;
-		if (*src == '\0')
-			break;
-		dest++ = '\0';
 	}
-	return (dest);
+	return (p);
 }
