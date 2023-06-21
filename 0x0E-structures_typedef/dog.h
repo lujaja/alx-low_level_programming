@@ -1,16 +1,9 @@
+/**
+ * This header file define struct dog data type
+ */
 
 #ifndef DOG_H
 #define DOG_H
-
-
-/**
- * struct god - user defined data type
- * @name: first member
- * @owner: second member
- * @age" third member
- *
- * Description: this user defined data types contains the difition for the dog
- */
 
 struct dog
 {
@@ -19,7 +12,18 @@ struct dog
 	char * owner;
 };
 
+/**
+ * dog_t - new data type for struct dog.
+ */
+
+typedef struct dog dog_t;
+
+/**
+ * Functions declaration.
+ */
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif

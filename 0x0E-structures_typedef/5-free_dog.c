@@ -1,14 +1,13 @@
-#include <stdlib>
+/**
+ * I'm Lujaja
+ * free_dog - Function name.
+ * @d: pointer to dog_t data type.
+ * Description - Function to free dogs
+ */
+
 #include "dog.h"
 
-/**
-  * I am lujaja
-  * free_dog - free the memory
-  * @d: structure to free
-  *
-  */
-
- void free_dog(dog_t *d) 
+void free_dog(dog_t *d)
 {
 	if (d)
 	{
