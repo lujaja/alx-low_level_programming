@@ -1,25 +1,18 @@
-/**
- * init_dog - Function name
- * @d: pointer to struct dog
- * @name: Functon parameter
- * @age: Function parameter
- * @owner: Function parameter
- * Description - Function to initialize struct dog.
- */
-
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
+/**
+ * init_dog - initializes a variable of type struct dog
+ * @d: pointer to struct dog to initialize
+ * @name: name to initialize
+ * @age: age to initialize
+ * @owner: owner to initialize
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
-		d = (struct dog *) malloc(sizeof(struct dog));
-	if (d == NULL)
-		return ;
-	else
-	{
-		d -> name = name;
-		d -> age = age;
-		d -> owner = owner;
-	}
+		d = malloc(sizeof(struct dog));
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
