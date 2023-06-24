@@ -1,17 +1,9 @@
-I'm lujaja
+File 0-print_name.c is a function that prints a name.
 
-void print_name(char *name, void (*f)(char *));
-a function to print a name
+File 1-array_iterator.c is a function that executes a function given as a parameter on each element of an array.
 
-void array_iterator(int *array, size_t size, void (*action)(int));
-function that executes a function given as a parameter on each element of an array
+File 2-int_index.c is a function that searches for an integer.
 
-int int_index(int *array, int size, int (*cmp)(int));
-a function that searches for an integer.
+Files 3-main.c, 3-op_functions.c, 3-get_op_func.c, 3-calc.h are part of a program that performs simple operations.
 
-calc
-a program that performs simple operations
-
-100-main_opcodes.c
-a program to print its own opcodes.
-
+File function_pointers.h is the header file that contains all these functions' prototypes.

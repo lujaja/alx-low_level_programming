@@ -1,9 +1,8 @@
-#ifndef VA_F_H
-#define VA_F_H
+#ifndef VAR_FUNC_H
+#define VAR_FUNC_H
 
 #include <stdio.h>
 #include <stdarg.h>
-#include <stdlib.h>
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
