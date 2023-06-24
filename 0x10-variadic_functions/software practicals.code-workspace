@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ASCII.C": "cpp"
+		}
+	},
+	"extensions": {
+		"recommendations": []
+	}
+}
