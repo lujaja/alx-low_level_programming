@@ -10,21 +10,14 @@
 */
 size_t print_listint(const listint_t *h)
 {
-    size_t count = 0;
-    /*listint_t *temp;*/
+        size_t count = 0;
 
-    /*temp = h;*/
-    
-    if (!h)
-        return (count);
-    else
-    {
-        while (h)
+        /* while we have a pointer to head */
+        while (h != NULL)
         {
-            printf("%d\n", h -> n);
-            h = h -> next;
-            count++;
+                printf("%d\n", h->n);
+                h = h->next;
+                count++;
         }
-    }
-    return (count);
+        return (count);
 }
