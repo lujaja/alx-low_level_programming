@@ -1,44 +1,46 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
- * delete_nodeint_at_index - function that deletes the node at index,
- * index of a listint_t linked list.
- * @head: pointer to pointer to the head of linked list.
- * @index:index of the node that should be deleted. Index starts at 0.
- *
- * Return:  1 if it succeeded, -1 if it failed.
+ * delete_nodeint_at_index - deletes the node at a given index
+ * @head: pointer to the head of a list
+ * @index: index of the node to be  deleted
+ * Return: 1 (success)
+ *        -1 (failed)
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *temp_variable, *temp_variable2;
-	unsigned int i = 0;
-	/* if there is no list then return NULL */
-	if (head == NULL || *head == NULL)
+	unsigned int i;
+	listint_t *prev;
+	listint_t *next;
+
+	prev = *head;
+
+	if (index != 0)
+	{
+		for (i = 0; i < index - 1 && prev != NULL; i++)
+		{
+			prev = prev->next;
+		}
+	}
+
+	if (prev == NULL || (prev->next == NULL && index != 0))
+	{
 		return (-1);
-	/* check for index 0 */
-	if (index == 0)
-	{
-		temp_variable = *head;
-		*head = (*head)->next;
-		free(temp_variable);
-		return (1);
 	}
-	/* assign the temporary variable as the first node */
-	temp_variable = *head;
-	/* traverse the list till the index */
-	while (i != index - 1 && temp_variable->next != NULL)
+
+	next = prev->next;
+
+	if (index != 0)
 	{
-		temp_variable = temp_variable->next;
-		i++;
+		prev->next = next->next;
+		free(next);
 	}
-	if (i == index - 1 && temp_variable->next != NULL)
+	else
 	{
-		temp_variable2 = temp_variable->next;
-		temp_variable->next = temp_variable2->next;
-		free(temp_variable2);
-		return (1);
-	} /* by here the code has failed so we return -1 */
-	return (-1);
+		free(prev);
+		*head = next;
+	}
+
+	return (1);
 }
