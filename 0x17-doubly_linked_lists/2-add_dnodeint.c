@@ -1,9 +1,10 @@
 #include "lists.h"
 /**
  * add_dnodeint - function
- *
  * @head: pointer pointer
  * @n: integer
+ *
+ * Return: new node address
  *
  * Description: add node at beginning
  *

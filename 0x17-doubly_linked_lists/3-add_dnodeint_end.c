@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
  * add_dnodeint_end - function
- *
  * @head: pointer pointer
  * @n: integer
  *
+ * Return: new dnode address
  * Description: add to dlisint_t at end
  *
  */

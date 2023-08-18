@@ -6,7 +6,6 @@
  * Return: number of nodes
  *
  * Description: count elements in dlinked list
- * 
  */
 size_t dlistint_len(const dlistint_t *h)
 {
@@ -14,14 +13,10 @@ size_t dlistint_len(const dlistint_t *h)
 
 	if (!h)
 		return (size);
-	else
+	while (h)
 	{
-		while (h)
-		{
-			size++;
-			h = h->next;
-		}
+		size++;
+		h = h->next;
 	}
-
 	return (size);
 }
