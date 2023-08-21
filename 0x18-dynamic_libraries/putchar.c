@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * _putchar - function
  * @c: chaaracter
@@ -9,6 +10,6 @@
  */
 int _putchar(char c)
 {
-	write(STDOUT_FILENO, &c, 1);
+	write(1, &c, 1);
 	return (1);
 }
