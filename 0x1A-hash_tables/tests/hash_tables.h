@@ -108,7 +108,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key);
 void shash_table_print(const shash_table_t *ht);
 void shash_table_print_rev(const shash_table_t *ht);
 void shash_table_delete(shash_table_t *ht);
-int insert_to_shash(shash_node_t *head, shash_node_t *new_node);
 shash_node_t *make_shash_node(const char *key, const char *value);
+void sort_hash_table(shash_table_t *ht, shash_node_t *new_node);
 
 #endif /* HASH_TABLES_H */
