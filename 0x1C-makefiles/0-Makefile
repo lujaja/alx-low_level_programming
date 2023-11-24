@@ -1,0 +1,8 @@
+# make -f 0-Makefile
+# CC compiler
+CC = gcc
+
+all: school
+
+school: main.c school.c m.h
+	$(CC) main.c school.c -o school

@@ -1,0 +1,37 @@
+# all bild executable
+# clean deletes all Emacs and Vim temp files with executable
+# oclean deletes the object files
+# fclean deletes Emacs and Vim temp files, the executables and object files
+# re forces recompile of all source files
+# SRC source files
+# CC compile
+# NAME executable name
+# RM the prgoram to deletes file
+# CFLAGS compiler flags
+CC = gcc
+SRC = main.c school.c
+OBJ = main.o school.o
+NAME = school
+RM = oclean fclean clean
+CFLAGS = -Wall -Werror -Wextra -pedantic
+DEP = m.h
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@ 
+
+%.o: %.c $(DEP)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+clean:
+	rm -f *~ $(NAME)
+fclean:
+	rm -f *~ $(NAME)
+	rm -f $(OBJ)
+
+oclean:
+	rm -f $(OBJ)
+
+re:
+	$(CC) $(FLAGS) $(SRC) -m.h -o $(NAME)

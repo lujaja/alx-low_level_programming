@@ -1,0 +1,39 @@
+# make -f 3-makefile
+# CC cimpiler
+# all builds your executable
+# clean deletes all Emacs and Vim temporary files along with the executables
+# oclean deletes the object files
+# fclean dletes all Emacs and Vim tembporary file, the executable, and object file
+# re forces recompilation of all source files
+# SRC source files
+# OBJ object code file
+# NAME file name of executable
+# RM the program to delete files
+# DEP dependecies
+
+CC = gcc
+SRC = main.c school.c
+OBJ = main.o school.o
+NAME = school
+DEP = m.h
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@
+
+%.o: %.c $(DEP)
+	$(CC) -c -o $@ $<
+
+clean:
+	rm -f *~ $(NAME)
+
+oclean:
+	rm -f $(OBJ)
+
+fclean:
+	rm -f *~ $(NAME)
+	rm -f $(OBJ)
+
+re:
+	$(CC)  $(SRC) $(DEP) -o $(NAME)
