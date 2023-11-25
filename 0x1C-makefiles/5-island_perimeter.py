@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Perimeter"""
+"""Perimeter of an islan"""
 
 
 def island_perimeter(grid):
@@ -10,13 +10,13 @@ def island_perimeter(grid):
     d = 0
     p = 0
     h = len(grid)
-    l = len(grid[0])
+    length = len(grid[0])
     for line in grid:
         c = 0
         for value in line:
             if value == 1:
                 surround = 4
-                if c != l - 1:
+                if c != length - 1:
                     if grid[d][c + 1]:
                         surround -= 1
                 if c != 0:
@@ -32,4 +32,3 @@ def island_perimeter(grid):
             c += 1
         d += 1
     return p
-
