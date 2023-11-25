@@ -1,17 +1,6 @@
-# make -f 2-Makefile
-# CC compiler
 CC = gcc
-# SCR source files
-SCR = main.c school.c
-# OBJ object code files
-OBJ = main.o school.o
-# NAME name of the executable
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
 NAME = school
-
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) $^ -o $@
-
-%.o:%.c m.h
-	$(CC) -c -o $@ $<
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)

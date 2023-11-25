@@ -7,15 +7,29 @@ def island_perimeter(grid):
     Atributes:
         grid (lid): 2d list
     """
-    if not isinstance(grid, list):
-        return
-    count = 0
-    for row in grid:
-        for value in row:
+    d = 0
+    p = 0
+    h = len(grid)
+    l = len(grid[0])
+    for line in grid:
+        c = 0
+        for value in line:
             if value == 1:
-                count += 1
-    if count < 1:
-        return 0
-    elif count > 1:
-        return count * 2 + 2
-    return 4
+                surround = 4
+                if c != l - 1:
+                    if grid[d][c + 1]:
+                        surround -= 1
+                if c != 0:
+                    if grid[d][c - 1]:
+                        surround -= 1
+                if d != h - 1:
+                    if grid[d + 1][c]:
+                        surround -= 1
+                if d != 0:
+                    if grid[d - 1][c]:
+                        surround -= 1
+                p += surround
+            c += 1
+        d += 1
+    return p
+
